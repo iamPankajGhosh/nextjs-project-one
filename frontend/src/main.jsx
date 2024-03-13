@@ -2,7 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
-import { Root, Home, Login, Signup, Dashboard, AddTask } from "./routes";
+import {
+  Root,
+  Home,
+  Login,
+  Signup,
+  Dashboard,
+  AddTask,
+  Profile,
+} from "./routes";
 
 import {
   createBrowserRouter,
@@ -19,6 +27,7 @@ const router = createBrowserRouter(
       <Route path="signup" element={<Signup />} />
       <Route path="dashboard" element={<Dashboard />} />
       <Route path="addtask" element={<AddTask />} />
+      <Route path="profile" element={<Profile />} />
     </Route>
   )
 );
